@@ -44,7 +44,7 @@ defaults:
       show_date: true
       read_time: true
       author_profile: true
-
+include: ["_pages"]
 author:
   name: "Foulleaf"
   avatar: "https://static-cdn.jtvnw.net/jtv_user_pictures/31589651-8c00-4c21-80ff-d0a4e26cf8a6-profile_image-300x300.png"

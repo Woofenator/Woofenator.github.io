@@ -1,9 +1,36 @@
 ---
+title: "Den of the Leaf"
 layout: splash
-title: Is ma home page
-author_profile: true
+date: 2020-04-07T16:17:00+03:00
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/splash/header.jpg
+  caption: "Photo by [Fotis Fotopoulos](https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/programming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  "
+excerpt: "A place for me to share my opinions, thoughts, adventures in coding, as well as current and past projects if I so desire"
+intro: 
+  - excerpt: Below you'll find some of the things I'm proud of working on
+feature_row:
+  - image_path: https://img.itch.zone/aW1nLzQ2Mzk0NDgucG5n/315x250%23c/FQgkqp.png
+    alt: "Hour of the Omega Karen"
+    title: "Hour of the Omega Karen"
+    excerpt: "My first GameJam entry, a silly little game about appeasing a demonic shopping mall attendee with your friends"
+    url: https://foulleaf.itch.io/omega-karen
+    btn_label: Play here
+    btn_class: btn--primary
+  - image_path: /assets/images/splash/cochess.png
+    alt: "Cochess Logo"
+    title: "Cochess"
+    excerpt: "A chess coaching platform that I am the lead backend engineer of"
+    url: "https://cochess.com"
+    btn_label: "Check it out"
+    btn_class: "btn--primary"
+  - image_path: https://via.placeholder.com/315x250.png
+    title: "Placeholder 3"
+    excerpt: "**Third thing to be proud of goes here**"
 ---
 
-# Homepage, my homies
+{% include feature_row id="intro" type="center" %}
 
-This is where I'll keep my stuff. If I'll have any! :smile:
+{% include feature_row %}{: height="250" }
