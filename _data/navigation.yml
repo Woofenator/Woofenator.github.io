@@ -1,0 +1,16 @@
+# main links
+main:
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Blog"
+    url: /blog/
+  - title: itch.io
+    url: https://foulleaf.itch.io/
+  - title: Twitch
+    url: https://twitch.tv/foulleaf
+  - title: "About"
+    url: /about
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/

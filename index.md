@@ -1,10 +1,9 @@
 ---
-layout: default
-title: Home
+layout: splash
+title: Is ma home page
+author_profile: true
 ---
 
-# Hello World
+# Homepage, my homies
 
-This is a hello world post! Huzzah? Oh my god, it works!
-
-{{ "Hello World!" | downcase }}
+This is where I'll keep my stuff. If I'll have any! :smile:

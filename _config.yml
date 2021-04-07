@@ -23,15 +23,46 @@ email: foulleaf.s@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   TODO: Write Description
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://woofenator.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: foulleaf
 github_username: woofenator
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+paginate: 10
+paginate_path: /blog/page:num
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
+      author_profile: true
+
+author:
+  name: "Foulleaf"
+  avatar: "https://static-cdn.jtvnw.net/jtv_user_pictures/31589651-8c00-4c21-80ff-d0a4e26cf8a6-profile_image-300x300.png"
+  bio: "A Senior Backend Developer at ChessX by day, amateur game developer by night"
+  location: "North-East Europe"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/foulleaf"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/woofenator"
+    - label: "Twitch"
+      icon: "fab fa-fw fa-twitch"
+      url: "https://twitch.tv/foulleaf"
+    - label: "itch.io"
+      icon: "fab fa-fw fa-itch-io"
+      url: "https://foulleaf.itch.io"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
