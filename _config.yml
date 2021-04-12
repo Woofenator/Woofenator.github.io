@@ -52,6 +52,11 @@ comments:
   provider: disqus
   disqus:
     shortname: den-of-the-leaf
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-4XT5ZNMZE4"
+    anonymize_ip: false # default
 include: ["_pages"]
 repository: Woofenator/Woofenator.github.io
 author:
