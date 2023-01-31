@@ -1,5 +1,5 @@
 ---
-title: "Den of the Leaf"
+title: "Gamedev, Programming and other Professional Thoughts"
 layout: splash
 date: 2020-04-07T16:17:00+03:00
 header:
@@ -16,7 +16,7 @@ feature_row:
     alt: "Hour of the Omega Karen"
     title: "Hour of the Omega Karen"
     excerpt: "My first GameJam entry, a silly little game about appeasing a demonic shopping mall attendee with your friends"
-    url: https://foulleaf.itch.io/omega-karen
+    url: https://woofenator.itch.io/omega-karen
     btn_label: Play here
     btn_class: btn--primary
   - image_path: /assets/images/splash/cochess.png
@@ -32,11 +32,6 @@ feature_row:
     excerpt: "In a previous job I made an interactive exhibit for the Riga Motor Museum that places you in a soviet era car for pictures. It's still running to this day"
     image_caption: Image from motormuzejs.lv
 ---
-
-{% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
-
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 <div class="feature__wrapper">
@@ -50,3 +45,7 @@ feature_row:
     </div>
   {% endfor %}
 </div>
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}

@@ -18,18 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Foulleaf Dev site
+title: Woofenator the Devenator
 email: foulleaf.s@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A Portfolio/Blog of a Senior Backend Developer dabbling in game development and other places where he shouldn't
+  A Portfolio/Blog of a Senior Backend Developer dabbling in game development and other places he shouldn't
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://foulleaf.dev" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: foulleaf
 github_username: woofenator
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.22.0"
-minimal_mistakes_skin: "dark"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -41,13 +40,12 @@ defaults:
       path: ""
       type: posts
     values:
+      toc: true
+      toc_sticky: true
       layout: single
-      show_date: true
       read_time: true
       author_profile: true
       share: true
-      related: true
-      comments: true
 comments:
   provider: disqus
   disqus:
@@ -56,27 +54,24 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-4XT5ZNMZE4"
-    anonymize_ip: false # default
+    anonymize_ip: true # default
 include: ["_pages"]
 repository: Woofenator/Woofenator.github.io
 author:
-  name: "Foulleaf"
-  avatar: "https://static-cdn.jtvnw.net/jtv_user_pictures/31589651-8c00-4c21-80ff-d0a4e26cf8a6-profile_image-300x300.png"
-  bio: "A Senior Backend Developer at ChessX by day, amateur game developer by night"
+  name: "Woofenator"
+  avatar: "https://static-cdn.jtvnw.net/jtv_user_pictures/66632e6f-6410-4bb7-a2f3-75cd908cbed0-profile_image-300x300.png"
+  bio: "A Senior Backend Developer by day, amateur game developer by night"
   location: "North-East Europe"
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/foulleaf"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/woofenator"
     - label: "Twitch"
       icon: "fab fa-fw fa-twitch"
-      url: "https://twitch.tv/foulleaf"
+      url: "https://twitch.tv/woofenator"
     - label: "itch.io"
       icon: "fab fa-fw fa-itch-io"
-      url: "https://foulleaf.itch.io"
+      url: "https://woofenator.itch.io"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
