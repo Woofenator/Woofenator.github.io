@@ -12,8 +12,14 @@ header:
   show_overlay_excerpt: false
 ---
 
+## 20 Games Challenge
+
 Over the next few coming months, I have decided to undertake the [20 games or less challenge](https://20_games_challenge.gitlab.io). It's an opportunity and a challenge to re-create classic video games in increasing levels of complexity to learn how to develop and design video games.
 
-## What the fuck am I doing with it
+## What am I doing with it?
 
 As a person that has a little bit of experience in creating video games, one would think I don`t have a need for this challenge, but to that I say the following: There is never a reason to not re-learn the basics for a particular skill set. So that's what I will do, go back to the basics and recreate some classic video games
+
+## Why am I doing it?
+
+## What do I hope to learn?
