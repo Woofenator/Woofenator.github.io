@@ -6,46 +6,23 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/splash/header.jpg
-  caption: "Photo by [Fotis Fotopoulos](https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/programming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-  "
+  caption: "Photo by [Fotis Fotopoulos](https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/programming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 excerpt: "A place for me to share my opinions, thoughts, adventures in coding, as well as current and past projects if I so desire"
-intro:
-  - excerpt: Below you'll find some of the things I'm proud of working on
 feature_row:
-  - image_path: https://img.itch.zone/aW1nLzQ2Mzk0NDgucG5n/315x250%23c/FQgkqp.png
-    alt: "Hour of the Omega Karen"
-    title: "Hour of the Omega Karen"
-    excerpt: "My first GameJam entry, a silly little game about appeasing a demonic shopping mall attendee with your friends"
-    url: https://woofenator.itch.io/omega-karen
-    btn_label: Play here
-    btn_class: btn--primary
-  - image_path: /assets/images/splash/cochess.png
-    alt: "Cochess Logo"
-    title: "Cochess"
-    excerpt: "A chess coaching platform that I am the lead backend engineer of"
-    url: "https://cochess.com"
-    btn_label: "Check it out"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/splash/motormuzejs.png
-    alt: "Motor Museum's Exhibit"
-    title: "Motor Museum"
-    excerpt: "In a previous job I made an interactive exhibit for the Riga Motor Museum that places you in a soviet era car for pictures. It's still running to this day"
-    image_caption: Image from motormuzejs.lv
+  - image_path: /assets/images/posts/clong.png
+    alt: Image of clong
+    title: Yet Another Pong Clone
+    excerpt: "Pong was one the earliest arcade video games ever created. Being one of the earliest, it is a simple game. All it takes to recreate it is just a ball, two paddles and some walls for the ball to bounce on. As such, it seems only fitting that this 20 games challenge begins with recreating this milestone of software and hardware engineering."
+    url: "/gamedev/2024/03/10-game-1-clong.html"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/posts/2023-01-11.jpg
+    alt: "Photo by Mark Cruz on Unsplash"
+    title: "Starting on the 20 games journey"
+    excerpt: "Over the next few coming months, I have decided to undertake the [20 games or less challenge](https://20_games_challenge.gitlab.io). It's an opportunity and a challenge to re-create classic video games in increasing levels of complexity to learn how to develop and design video games."
+    image_caption: Photo by <a href="https://unsplash.com/ja/@mark_crz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mark Cruz</a> on <a href="https://unsplash.com/photos/VW2oU66mwbc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    url: "/gamedev/2023/01/11/20-games-devlog.html"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
 ---
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-<div class="feature__wrapper">
-  {% for post in site.posts limit:3 %}
-    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
-      <div class="archive__item">
-        <div class="archive__item-body">
-          {% include archive-single.html %}
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div>
-
-{% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
+{% include feature_row type="left" %}
