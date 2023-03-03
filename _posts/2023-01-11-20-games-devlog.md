@@ -7,7 +7,7 @@ tags: gamedev Godot 20-games challenge game-development development coding
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/posts/2023-01-11.jpg
+  overlay_image: /docs/assets/images/posts/2023-01-11.jpg
   caption: Photo by <a href="https://unsplash.com/ja/@mark_crz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mark Cruz</a> on <a href="https://unsplash.com/photos/VW2oU66mwbc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   show_overlay_excerpt: false
 ---
