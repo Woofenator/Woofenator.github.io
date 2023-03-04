@@ -1,0 +1,67 @@
+{% if include.id %}
+  {% assign feature_row = page[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+
+  {% for f in site.posts limit:3 %}
+    {% if f.header.teaser %}
+      {% capture teaser %}{{ f.header.teaser }}{% endcapture %}
+    {% else %}
+      {% assign teaser = site.teaser %}
+    {% endif %}
+
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+        {% if f.header.overlay_image %}
+          <div class="archive__item-teaser">
+            <img src="{{ f.header.overlay_image | relative_url }}"
+                 alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            {% if f.header.caption %}
+              <span class="archive__item-caption">{{ f.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if f.id %}
+          {% assign title = f.title | markdownify | remove: "<p>" | remove: "</p>" %}
+        {% else %}
+          {% assign title = f.title %}
+        {% endif %}
+
+        <div class="archive__item-body">
+          {% if title %}
+            <h2 class="archive__item-title" style="margin-bottom: 0em;">{{ title }}</h2>
+          {% endif %}
+
+          {% assign words_per_minute = f.words_per_minute | default: site.words_per_minute | default: 200 %}
+          {% assign words = f.content | strip_html | number_of_words %}
+          <p class="page__meta" style="font-size: 0.6em; margin-bottom: 0.3em;">
+            <span class="page__meta-readtime">
+              <i class="far {% if include.type == 'grid' and f.read_time and f.show_date %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
+              {% if words < words_per_minute %}
+                {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+              {% elsif words == words_per_minute %}
+                1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+              {% else %}
+                {{ words | divided_by: words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+              {% endif %}
+            </span>
+          </p>
+
+          {% if f.excerpt %}
+            <div class="archive__item-excerpt" style="margin-bottom: 1em;">
+              {{ f.excerpt | markdownify | strip_html | truncate: 200 }}
+            </div>
+          {% endif %}
+          {% if f.url %}
+            <p><a href="{{ f.url | relative_url }}" class="btn btn--inverse">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Continue Reading" }}</a></p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

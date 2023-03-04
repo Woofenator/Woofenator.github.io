@@ -12,8 +12,6 @@ header:
   show_overlay_excerpt: false
 ---
 
-## 20 Games Challenge
-
 Over the next few coming months, I have decided to undertake the [20 games or less challenge](https://20_games_challenge.gitlab.io). It's an opportunity and a challenge to re-create classic video games in increasing levels of complexity to learn how to develop and design video games.
 
 ## But why
